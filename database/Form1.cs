@@ -36,7 +36,7 @@ namespace database
         {
             string login = textBox2.Text;
             string password = textBox1.Text;
-            
+
             if(login == "thebude" && password == "12345")
             {
                 MessageBox.Show("Muvfoqiyatli Kirildi!");
@@ -46,7 +46,7 @@ namespace database
             }
             else
             {
-                MessageBox.Show("Login yoki Parol Xato\nIltimos qaytadan o'rinib ko'ring");
+                MessageBox.Show("Login yoki Parol Xato\nIltimos qaytadan o'rinib ko'ring", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -56,6 +56,16 @@ namespace database
             var newWindow = new Form3();
             newWindow.Show();
             this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
